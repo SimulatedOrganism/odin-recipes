@@ -1,0 +1,87 @@
+/* messing with the embed code for Sona at https://fonts.google.com/selection/embed I found the monospace property which is intuitively named monospace and all glyphs have the same total character width. */
+/* The alternative for monospace is proportional which has a tool tip saying proportional is natural widths and the default. Each glyph takes up a unique amount of space on a line with proportional */
+/* Select one value for each property to see the differences between different values including regular being listed as 400 weight and mediums as 500*/
+
+@font-face {
+  font-family: Sono;
+  src: url(fonts/Sono/static/Sono_Proportional-ExtraLight.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Sono;
+  src: url(fonts/Sono/static/Sono_Proportional-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Sono;
+  src: url(fonts/Sono/static/Sono_Proportional-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Sono;
+  src: url(fonts/Sono/static/Sono_Proportional-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Sono;
+  src: url(fonts/Sono/static/Sono_Proportional-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Sono;
+  src: url(fonts/Sono/static/Sono_Proportional-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Sono;
+  src: url(fonts/Sono/static/Sono_Proportional-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Sono Mono";
+  src: url(fonts/Sono/static/Sono-ExtraLight.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Sono Mono";
+  src: url(fonts/Sono/static/Sono-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Sono Mono";
+  src: url(fonts/Sono/static/Sono-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Sono Mono";
+  src: url(fonts/Sono/static/Sono-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Sono Mono";
+  src: url(fonts/Sono/static/Sono-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Sono Mono";
+  src: url(fonts/Sono/static/Sono-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Sono Mono";
+  src: url(fonts/Sono/static/Sono-ExtraBold.ttf);
+  font-weight: 800;
+}

@@ -1,0 +1,138 @@
+@import url("sona-font.css");
+
+/* univeral selector - all elements are targeted and unless any other selector targets any element, the element will style as specified by the rule */
+/* the following properties are all the ones touched on so far in the TOP Foundations course */
+* {
+  color: hsl(360, 50%, 50%);
+  background-color: rgb(0, 255, 0);
+  font-family: Copperplate, "Brush Script MT", fantasy;
+  font-size: 4px;
+  font-weight: light;
+  text-align: right;
+  height: 200px;
+  width: 1000px;
+  /*
+  border: orange, 5px, dashed;
+  */
+}
+
+/* both the root element of the page which is the html element, and any other element which is a descendant of the html element, which is all other elements, */
+/* are targeted therefore this rule has higher specificity and thus will be applied to any element, unless a rule with a selector of higher specificity is found */
+html, html * {
+  color: rgb(0, 0 ,0);
+  background-color: turquoise;
+  font-family: "Pirata One", "Brush Script MT", fantasy;
+  font-size: 80px;
+  font-weight: bold; 
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* 
+  testing
+  border: #000, 5px, dotted;
+  */
+}
+
+h1, li {
+  /*
+  testing
+  border: hsl(240, 50%, 50%), 3px, solid;
+  */
+  background-color: hsl(174, 72%, 56%);
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+p, ul, ol, li, a:link {
+  font-weight: 400;
+}
+
+p, ul, li, ol, strong, a:link {
+  font-size: 25px;
+}
+
+ul {
+  text-align: center;
+  list-style-position: inside; /*not yet covered in TOP; allows the list item marker to be centered with the content of the list item*/
+  padding-left: 0;
+}
+
+ul.navigation {
+ list-style-type: none; /*not yet covered in TOP */
+
+}
+
+a:link {
+  font-size: 35px;
+  text-decoration: underline;
+  /*
+  testing
+  border: rgb(255, 255, 0), 3px, double;
+  */
+}
+
+a:visited {
+  color: #000;
+  /* according to https://stackoverflow.com/questions/35031032/text-decoration-not-working-for-visited-state-link#answer-35037025 which
+  links to https://developer.mozilla.org/en-US/docs/Web/CSS/Privacy_and_the_:visited_selector
+  there is a limitation for styling the visited links. Only a select few of properties can be applied to visited links. 
+  text-decoration is not one of them.
+  This is due to user's privacy issues.
+  text-decoration: none;
+  */
+}
+
+a:hover {
+  color: hsl(60, 50%, 75%);
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: underline overline;
+}
+
+/*rules for not only the text but also the list item markers themselves if present, which aren't a part of the content of the list item itself*/
+li {
+  font-family: "Sono", Arial, sans-serif;
+  text-align: center;
+}
+
+ol li {
+  text-align: left;
+}
+
+ol.roman {
+  list-style-type: upper-roman;
+}
+
+img {
+  height: 500px;
+}
+
+.recipeLinks {
+  width: 600px;
+  margin: 10% auto;
+  padding: 12px 12px 2px;
+}
+
+.recipeLinks, .navigation {
+  background-color: hsl(0, 100%, 25%);
+}
+
+.recipeLinks > h1, .navigation > li {
+  margin-bottom: 10px;
+}
+
+@font-face {
+  font-family: "Pirata One";
+  src: url(fonts/PirataOne/PirataOne-Regular.ttf);
+}
